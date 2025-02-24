@@ -18,7 +18,7 @@ const H2 = styled.h2`
 
 const ApprovedAppointments = () => {
     const { id } = useParams();
-    const local = "http://localhost:5000/api";
+    const local = "http://localhost:5001/api";
 
 
     const asignDate = useRef();
@@ -44,7 +44,7 @@ const ApprovedAppointments = () => {
         const formData = new FormData();
         formData.append("report", file);
         await axios.post(
-            `http://localhost:5000/api/reports/${id}/uploadreport`,
+            `http://localhost:5001/api/reports/${id}/uploadreport`,
             formData
         );
         console.log("reports");

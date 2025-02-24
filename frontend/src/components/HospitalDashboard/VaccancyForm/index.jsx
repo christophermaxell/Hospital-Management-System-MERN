@@ -38,7 +38,7 @@ const VaccancyForm = ({ open, setOpen }) => {
     setIsSubmitting(true);
     let reqBody = {
       method: "post",
-      url: `http://localhost:5000/api/hospitals/${id}/events/addEvents`,
+      url: `http://localhost:5001/api/hospitals/${id}/events/addEvents`,
       body: { position, amount, desc },
     };
     let [data, error] = await axiosRequest(reqBody);

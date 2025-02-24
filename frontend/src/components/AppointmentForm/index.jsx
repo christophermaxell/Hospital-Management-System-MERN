@@ -66,7 +66,7 @@ function AppointmentButton({ open, setOpen}) {
     try {
       setIsSubmitting(true);
       await axios.post(
-        `http://localhost:5000/api/userAppointment/${params.hospitalID}/appointment/setappointment/`,
+        `http://localhost:5001/api/userAppointment/${params.hospitalID}/appointment/setappointment/`,
         newAppointment
       );
       alert(
@@ -81,7 +81,7 @@ function AppointmentButton({ open, setOpen}) {
     setIsSubmitting(false);
 
     // const reqBody = {
-    //   url: `http://localhost:5000/api/userAppointment/60e0638708e8331f5cb3f9bd/appointment/setappointment/`,
+    //   url: `http://localhost:5001/api/userAppointment/60e0638708e8331f5cb3f9bd/appointment/setappointment/`,
     //   method: "post",
     //   body: newAppointment
     // }

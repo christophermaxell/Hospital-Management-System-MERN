@@ -47,7 +47,7 @@ const Index = () => {
     useEffect(() => {
         async function getHospitalData() {
             try {
-                const data = await axios(`http://localhost:5000/api/hospitals/${hospitalID}`)
+                const data = await axios(`http://localhost:5001/api/hospitals/${hospitalID}`)
                 console.log(data)
                 setHospitalData(data.data)
 

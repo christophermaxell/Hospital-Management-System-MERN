@@ -12,7 +12,7 @@ import {
   HOSPITAL_EVENTS_ADD,
 } from "../constants/hospitalConstants";
 
-const BASE_URL = `http://localhost:5000/api`;
+const BASE_URL = `http://localhost:5001/api`;
 
 export const hospitalLoginAction = (email, password) => async (
   dispatch,
@@ -21,7 +21,7 @@ export const hospitalLoginAction = (email, password) => async (
   try {
     dispatch({ type: HOSPITAL_LOGIN_REQUEST });
     const { data } = await axios.post(
-      "http://localhost:5000/api/hospitals/loginHospital",
+      "http://localhost:5001/api/hospitals/loginHospital",
       {
         email,
         password,
@@ -71,7 +71,7 @@ export const hospitalRegisterAction = (
     const {
       data,
     } = await axios.post(
-      "http://localhost:5000/api/hospitals/registerHospital",
+      "http://localhost:5001/api/hospitals/registerHospital",
       { name, email, password, contact1, contact2 }
     );
     console.log(data);

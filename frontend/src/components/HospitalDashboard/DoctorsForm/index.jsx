@@ -30,7 +30,7 @@ const AddEvent = ({ open, setOpen, type }) => {
   const [graduatedFrom, setGraduatedFrom] = useState("");
   const [submitting, setSubmitting] = useState(false);
 
-  const BASE_URL = `http://localhost:5000/api`;
+  const BASE_URL = `http://localhost:5001/api`;
   const hospitalLogin = useSelector((state) => {
     return state.hospitalLogin;
   });

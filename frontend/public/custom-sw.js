@@ -15,6 +15,6 @@ self.addEventListener("push", (e) => {
   self.registration.showNotification(data.title, {
     body: "Deloitte Digital",
     icon:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vector%2Fnotification-icon-bell-alarm-alert-vector-25357494&psig=AOvVaw2TDI9_9uJ7wdFOf-_7wDnM&ust=1582674929550000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIDh99ux6-cCFQAAAAAdAAAAABAD",
+      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vector%2Fnotification-icon-bell-alarm-alert-vector-25357494&psig=AOvVaw2TDI9_9uJ7wdFOf-_7wDnM&ust=1582674929550010&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIDh99ux6-cCFQAAAAAdAAAAABAD",
   });
 });
